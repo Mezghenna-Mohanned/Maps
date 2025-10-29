@@ -1,15 +1,9 @@
-export interface MapPosition {
+export interface Position {
   lat: number;
   lng: number;
 }
 
-export type AlgorithmType =
-  | 'dijkstra'
-  | 'astar'
-  | 'bfs'
-  | 'dfs'
-  | 'greedy'
-  | 'jps';
+export type AlgorithmType = 'dijkstra' | 'astar' | 'bfs' | 'dfs' | 'greedy';
 
 export interface AlgorithmInfo {
   id: AlgorithmType;
@@ -18,4 +12,10 @@ export interface AlgorithmInfo {
   timeComplexity: string;
   spaceComplexity: string;
   guaranteesOptimal: boolean;
+}
+
+export interface AlgorithmResult {
+  visited: number;
+  pathLength: number;
+  runtime: number;
 }

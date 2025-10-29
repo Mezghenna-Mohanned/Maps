@@ -41,12 +41,4 @@ export const ALGORITHMS: AlgorithmInfo[] = [
     spaceComplexity: 'O(b^d)',
     guaranteesOptimal: false,
   },
-  {
-    id: 'jps',
-    name: 'Jump Point Search',
-    description: 'Optimized A* for uniform-cost grids',
-    timeComplexity: 'O(b^d)',
-    spaceComplexity: 'O(b^d)',
-    guaranteesOptimal: true,
-  },
 ];
